@@ -1,0 +1,28 @@
+{
+  "name": "design-token",
+  "version": "0.1.0",
+  "description": "Package for design-tokens for Focus8, made to be used in conjunction with restyle.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "author": "Andreas <andreas@heisenbug.no>",
+  "license": "MIT",
+  "keywords": [
+    "design-tokens",
+    "restyle",
+    "react-native",
+    "theme"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@shopify/restyle": "^2.4.5"
+  }
+}

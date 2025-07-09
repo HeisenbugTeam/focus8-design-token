@@ -1,5 +1,5 @@
 {
-  "name": "design-token",
+  "name": "@focus8/design-token",
   "version": "0.1.0",
   "description": "Package for design-tokens for Focus8, made to be used in conjunction with restyle.",
   "main": "dist/index.js",

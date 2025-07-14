@@ -2,21 +2,174 @@ import { createTheme } from '@shopify/restyle';
 import palette from './palette';
 
 const spacing = {
-  none: 0,
-  px: 1,
+  0: 0,
   xxs: 2,
   xs: 4,
-  sm: 8,
-  md: 16,
+  s: 8,
+  m: 16,
   l: 24,
   xl: 32,
   xxl: 40,
   xxxl: 48,
 };
 
+const textVariants = {
+  defaults: {
+    fontFamily: 'RobotoFlex_400Regular',
+    color: 'plannerForeground',
+    fontSize: 16,
+    lineHeight: 24,
+  },
+  xs: {
+    fontFamily: 'RobotoFlex_500Regular',
+    fontSize: {
+      tablet: 12,
+    },
+    lineHeight: {
+      tablet: 16,
+    },
+  },
+  s: {
+    fontSize: {
+      tablet: 14,
+    },
+    lineHeight: {
+      tablet: 20,
+    },
+  },
+  m: {
+    fontSize: {
+      tablet: 16,
+    },
+    lineHeight: {
+      tablet: 24,
+    },
+  },
+  mBold: {
+    fontFamily: 'RobotoFlex_500Regular',
+    fontSize: {
+      tablet: 16,
+    },
+    lineHeight: {
+      tablet: 24,
+    },
+  },
+  l: {
+    fontSize: {
+      tablet: 18,
+    },
+    lineHeight: {
+      tablet: 28,
+    },
+  },
+  lNarrow: {
+    fontFamily: 'RobotoFlex_400Narrow',
+    fontSize: {
+      tablet: 18,
+    },
+    lineHeight: {
+      tablet: 28,
+    },
+  },
+  lBold: {
+    fontFamily: 'RobotoFlex_500Regular',
+    fontSize: {
+      tablet: 18,
+    },
+    lineHeight: {
+      tablet: 28,
+    },
+  },
+  xl: {
+    fontSize: {
+      tablet: 20,
+    },
+    lineHeight: {
+      tablet: 28,
+    },
+  },
+  '2xl': {
+    fontFamily: 'RobotoFlex_400Regular',
+    fontSize: {
+      tablet: 24,
+    },
+    lineHeight: {
+      tablet: 32,
+    },
+  },
+  '2xlBold': {
+    fontFamily: 'RobotoFlex_500Regular',
+    fontSize: {
+      tablet: 24,
+    },
+    lineHeight: {
+      tablet: 32,
+    },
+  },
+  '3xl': {
+    fontFamily: 'RobotoFlex_500Wide',
+    fontSize: {
+      tablet: 30,
+    },
+    lineHeight: {
+      tablet: 36,
+    },
+  },
+  '4xl': {
+    fontSize: {
+      tablet: 36,
+    },
+    lineHeight: {
+      tablet: 40,
+    },
+  },
+  '5xl': {
+    fontSize: {
+      tablet: 48,
+    },
+    lineHeight: {
+      tablet: 48,
+    },
+  },
+  '6xl': {
+    fontSize: {
+      tablet: 60,
+    },
+    lineHeight: {
+      tablet: 60,
+    },
+  },
+  '7xl': {
+    fontSize: {
+      tablet: 72,
+    },
+    lineHeight: {
+      tablet: 72,
+    },
+  },
+  '8xl': {
+    fontSize: {
+      tablet: 96,
+    },
+    lineHeight: {
+      tablet: 96,
+    },
+  },
+  '9xl': {
+    fontFamily: 'RobotoFlex_500Wide',
+    fontSize: {
+      tablet: 128,
+    },
+    lineHeight: {
+      tablet: 128,
+    },
+  },
+};
+
 // Create the base theme using createTheme to get type validation
 const baseTheme = createTheme({
   spacing,
+  textVariants,
   colors: {
     // Planner colors
     plannerBackground: palette.neutral[200],

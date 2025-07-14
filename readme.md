@@ -31,11 +31,41 @@ function App() {
 
 ### Theme Structure
 
-The package exports two main themes:
+The package exports two main themes and includes a text variant system:
 
 - **`baseTheme`** - Light theme variant
 - **`darkTheme`** - Dark theme variant
 - **`Theme`** - TypeScript type for theme objects
+
+### Text Variants
+
+The `textVariants` system provides predefined styles for text components, ensuring consistency across the application. Each variant includes properties like `fontSize`, `lineHeight`, and `fontFamily`, with support for responsive design (e.g., tablet-specific sizes).
+
+#### Default Variant
+- `fontFamily`: RobotoFlex_400Regular
+- `fontSize`: 16
+- `lineHeight`: 24
+- `color`: plannerForeground
+
+#### Available Variants
+- `xs`, `s`, `m`, `l`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`, `6xl`, `7xl`, `8xl`, `9xl`
+
+Some sizes also have variations to provide flexibility:
+- **`l`**: Standard large text
+- **`lBold`**: Large text with bold font weight
+- **`lNarrow`**: Large text with reduced width
+
+Each variant can define responsive properties, such as:
+```typescript
+{
+  fontSize: {
+    tablet: 12,
+  },
+  lineHeight: {
+    tablet: 16,
+  },
+}
+```
 
 ### Color System
 
@@ -87,12 +117,11 @@ eventBlueButtonForeground
 
 ```typescript
 const spacing = {
-  none: 0,
-  px: 1,
+  0: 0,
   xxs: 2,
   xs: 4,
-  sm: 8,
-  md: 16,
+  s: 8,
+  m: 16,
   l: 24,
   xl: 32,
   xxl: 40,

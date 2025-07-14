@@ -168,6 +168,9 @@ const textVariants = {
 
 // Create the base theme using createTheme to get type validation
 const baseTheme = createTheme({
+  breakpoints: {
+    tablet: 768,
+  },
   spacing,
   textVariants,
   colors: {

@@ -24,144 +24,178 @@ const textVariants = {
     fontFamily: 'RobotoFlex_500Regular',
     fontSize: {
       tablet: 12,
+      phone: 12,
     },
     lineHeight: {
       tablet: 16,
+      phone: 16,
     },
   },
   s: {
     fontSize: {
       tablet: 14,
+      phone: 14,
     },
     lineHeight: {
       tablet: 20,
+      phone: 20,
     },
   },
   m: {
     fontSize: {
       tablet: 16,
+      phone: 16,
     },
     lineHeight: {
       tablet: 24,
+      phone: 24,
     },
   },
   mBold: {
     fontFamily: 'RobotoFlex_500Regular',
     fontSize: {
       tablet: 16,
+      phone: 16,
     },
     lineHeight: {
       tablet: 24,
+      phone: 24,
     },
   },
   l: {
     fontSize: {
       tablet: 18,
+      phone: 18,
     },
     lineHeight: {
       tablet: 28,
+      phone: 28,
     },
   },
   lNarrow: {
     fontFamily: 'RobotoFlex_400Narrow',
     fontSize: {
       tablet: 18,
+      phone: 18,
     },
     lineHeight: {
       tablet: 28,
+      phone: 28,
     },
   },
   lBold: {
     fontFamily: 'RobotoFlex_500Regular',
     fontSize: {
       tablet: 18,
+      phone: 18,
     },
     lineHeight: {
       tablet: 28,
+      phone: 28,
     },
   },
   xl: {
     fontSize: {
       tablet: 20,
+      phone: 20,
     },
     lineHeight: {
       tablet: 28,
+      phone: 28,
     },
   },
   '2xl': {
     fontFamily: 'RobotoFlex_400Regular',
     fontSize: {
       tablet: 24,
+      phone: 24,
     },
     lineHeight: {
       tablet: 32,
+      phone: 32,
     },
   },
   '2xlBold': {
     fontFamily: 'RobotoFlex_500Regular',
     fontSize: {
       tablet: 24,
+      phone: 24,
     },
     lineHeight: {
       tablet: 32,
+      phone: 32,
     },
   },
   '3xl': {
     fontFamily: 'RobotoFlex_500Wide',
     fontSize: {
       tablet: 30,
+      phone: 30,
     },
     lineHeight: {
       tablet: 36,
+      phone: 36,
     },
   },
   '4xl': {
     fontSize: {
       tablet: 36,
+      phone: 36,
     },
     lineHeight: {
       tablet: 40,
+      phone: 40,
     },
   },
   '5xl': {
     fontSize: {
       tablet: 48,
+      phone: 48,
     },
     lineHeight: {
       tablet: 48,
+      phone: 48,
     },
   },
   '6xl': {
     fontSize: {
       tablet: 60,
+      phone: 60,
     },
     lineHeight: {
       tablet: 60,
+      phone: 60,
     },
   },
   '7xl': {
     fontSize: {
       tablet: 72,
+      phone: 72,
     },
     lineHeight: {
       tablet: 72,
+      phone: 72,
     },
   },
   '8xl': {
     fontSize: {
       tablet: 96,
+      phone: 96,
     },
     lineHeight: {
       tablet: 96,
+      phone: 96,
     },
   },
   '9xl': {
     fontFamily: 'RobotoFlex_500Wide',
     fontSize: {
       tablet: 128,
+      phone: 128,
     },
     lineHeight: {
       tablet: 128,
+      phone: 128,
     },
   },
 };

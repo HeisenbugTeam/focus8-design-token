@@ -248,9 +248,26 @@ const baseTheme = createTheme({
     plannerButtonBackground: palette.neutral[100],
     plannerButtonForeground: palette.black,
     plannerButtonIcon: palette.neutral[600],
+    plannerButtonRipple: palette.neutral[300],
     plannerPrimaryButtonBackground: palette.blue[600],
     plannerPrimaryButtonForeground: palette.white,
     plannerPrimaryButtonIcon: palette.blue[300],
+    plannerPrimaryButtonRipple: palette.blue[400],
+
+    plannerErrorBackground: palette.red[100],
+    plannerErrorForeground: palette.black,
+    plannerErrorIcon: palette.red[500],
+    plannerErrorRipple: palette.red[300],
+
+    plannerWarningBackground: palette.yellow[100],
+    plannerWarningForeground: palette.black,
+    plannerWarningIcon: palette.yellow[500],
+    plannerWarningRipple: palette.yellow[300],
+
+    plannerSuccessBackground: palette.green[100],
+    plannerSuccessForeground: palette.black,
+    plannerSuccessIcon: palette.green[500],
+    plannerSuccessRipple: palette.green[300],
 
     calendarBackground: palette.white,
     calendarForeground: palette.black,
@@ -413,9 +430,26 @@ const darkTheme: Theme = {
     plannerButtonBackground: palette.neutral[800],
     plannerButtonForeground: palette.white,
     plannerButtonIcon: palette.neutral[400],
+    plannerButtonRipple: palette.neutral[600],
     plannerPrimaryButtonBackground: palette.blue[600],
     plannerPrimaryButtonForeground: palette.white,
     plannerPrimaryButtonIcon: palette.blue[300],
+    plannerPrimaryButtonRipple: palette.blue[400],
+
+    plannerErrorBackground: palette.red[950],
+    plannerErrorForeground: palette.white,
+    plannerErrorIcon: palette.red[500],
+    plannerErrorRipple: palette.red[800],
+
+    plannerWarningBackground: palette.yellow[950],
+    plannerWarningForeground: palette.white,
+    plannerWarningIcon: palette.yellow[500],
+    plannerWarningRipple: palette.yellow[800],
+
+    plannerSuccessBackground: palette.green[950],
+    plannerSuccessForeground: palette.white,
+    plannerSuccessIcon: palette.green[500],
+    plannerSuccessRipple: palette.green[800],
 
     calendarBackground: palette.neutral[950],
     calendarForeground: palette.white,

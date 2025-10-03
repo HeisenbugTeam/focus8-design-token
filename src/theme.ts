@@ -3,199 +3,227 @@ import palette from './palette';
 
 const spacing = {
   0: 0,
-  xxs: 2,
-  xs: 4,
+  '3xs': 2,
+  '2xs': 4,
+  xs: 6,
   s: 8,
-  m: 16,
-  l: 24,
-  xl: 32,
-  xxl: 40,
-  xxxl: 48,
+  sm: 10,
+  m: 12,
+  l: 16,
+  xl: 18,
+  '2xl': 20,
+  '3xl': 24,
+  '4xl': 32,
+  '5xl': 36,
+  '6xl': 48,
+  '7xl': 56,
+  '8xl': 64,
+  '9xl': 72,
+  '10xl': 80,
+};
+
+const stroke = {
+  xs: 1,
+  s: 1.5,
+  m: 2,
+  l: 2.5,
 };
 
 const textVariants = {
   defaults: {
     fontFamily: 'RobotoFlex_400Regular',
     color: 'plannerForeground',
-    fontSize: 16,
-    lineHeight: 24,
+    fontWeight: 400,
+    fontSize: {
+      tablet: 16,
+      phone: 14,
+    },
+    lineHeight: {
+      tablet: 24,
+      phone: 16,
+    },
   },
   xs: {
     fontFamily: 'RobotoFlex_500Regular',
+    fontWeight: 500,
     fontSize: {
       tablet: 12,
-      phone: 12,
+      phone: 10,
     },
     lineHeight: {
       tablet: 16,
-      phone: 16,
+      phone: 12,
     },
   },
   s: {
     fontSize: {
       tablet: 14,
-      phone: 14,
+      phone: 12,
     },
     lineHeight: {
       tablet: 20,
-      phone: 20,
+      phone: 14,
     },
   },
   m: {
     fontSize: {
       tablet: 16,
-      phone: 16,
+      phone: 14,
     },
     lineHeight: {
       tablet: 24,
-      phone: 24,
+      phone: 16,
     },
   },
   mBold: {
     fontFamily: 'RobotoFlex_500Regular',
+    fontWeight: 500,
     fontSize: {
       tablet: 16,
-      phone: 16,
+      phone: 14,
     },
     lineHeight: {
       tablet: 24,
-      phone: 24,
+      phone: 16,
     },
   },
   l: {
     fontSize: {
       tablet: 18,
-      phone: 18,
+      phone: 16,
     },
     lineHeight: {
       tablet: 28,
-      phone: 28,
+      phone: 18,
     },
   },
   lNarrow: {
     fontFamily: 'RobotoFlex_400Narrow',
     fontSize: {
       tablet: 18,
-      phone: 18,
+      phone: 16,
     },
     lineHeight: {
       tablet: 28,
-      phone: 28,
+      phone: 18,
     },
   },
   lBold: {
     fontFamily: 'RobotoFlex_500Regular',
+    fontWeight: 500,
     fontSize: {
       tablet: 18,
-      phone: 18,
+      phone: 16,
     },
     lineHeight: {
       tablet: 28,
-      phone: 28,
+      phone: 18,
     },
   },
   xl: {
     fontSize: {
       tablet: 20,
-      phone: 20,
+      phone: 18,
     },
     lineHeight: {
       tablet: 28,
-      phone: 28,
+      phone: 20,
     },
   },
   '2xl': {
     fontFamily: 'RobotoFlex_400Regular',
     fontSize: {
       tablet: 24,
-      phone: 24,
+      phone: 20,
     },
     lineHeight: {
       tablet: 32,
-      phone: 32,
+      phone: 24,
     },
   },
   '2xlBold': {
     fontFamily: 'RobotoFlex_500Regular',
+    fontWeight: 500,
     fontSize: {
       tablet: 24,
-      phone: 24,
+      phone: 20,
     },
     lineHeight: {
       tablet: 32,
-      phone: 32,
+      phone: 24,
     },
   },
   '3xl': {
     fontFamily: 'RobotoFlex_500Wide',
+    fontWeight: 500,
     fontSize: {
       tablet: 30,
-      phone: 30,
+      phone: 24,
     },
     lineHeight: {
       tablet: 36,
-      phone: 36,
+      phone: 30,
     },
   },
   '4xl': {
     fontSize: {
       tablet: 36,
-      phone: 36,
+      phone: 30,
     },
     lineHeight: {
-      tablet: 40,
-      phone: 40,
+      tablet: 42,
+      phone: 36,
     },
   },
   '5xl': {
     fontSize: {
       tablet: 48,
-      phone: 48,
+      phone: 36,
     },
     lineHeight: {
-      tablet: 48,
-      phone: 48,
+      tablet: 54,
+      phone: 40,
     },
   },
   '6xl': {
     fontSize: {
       tablet: 60,
-      phone: 60,
+      phone: 48,
     },
     lineHeight: {
-      tablet: 60,
-      phone: 60,
+      tablet: 66,
+      phone: 54,
     },
   },
   '7xl': {
     fontSize: {
       tablet: 72,
-      phone: 72,
+      phone: 56,
     },
     lineHeight: {
-      tablet: 72,
-      phone: 72,
+      tablet: 80,
+      phone: 60,
     },
   },
   '8xl': {
     fontSize: {
       tablet: 96,
-      phone: 96,
+      phone: 64,
     },
     lineHeight: {
-      tablet: 96,
-      phone: 96,
+      tablet: 108,
+      phone: 72,
     },
   },
   '9xl': {
     fontFamily: 'RobotoFlex_500Wide',
     fontSize: {
       tablet: 128,
-      phone: 128,
+      phone: 72,
     },
     lineHeight: {
-      tablet: 128,
-      phone: 128,
+      tablet: 142,
+      phone: 80,
     },
   },
 };
@@ -207,6 +235,7 @@ const baseTheme = createTheme({
     tablet: 768,
   },
   spacing,
+  stroke,
   textVariants,
   colors: {
     // Planner colors

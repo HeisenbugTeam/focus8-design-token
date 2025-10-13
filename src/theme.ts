@@ -22,6 +22,18 @@ const spacing = {
   '10xl': 80,
 };
 
+const rounding = {
+  '2xs': 2,
+  xs: 4,
+  sm: 6,
+  md: 8,
+  lg: 10,
+  xl: 12,
+  '2xl': 16,
+  '3xl': 24,
+  'pill': 999,
+}
+
 const stroke = {
   xs: 1,
   s: 1.5,
@@ -181,8 +193,8 @@ const textVariants = {
       phone: 36,
     },
     lineHeight: {
-      tablet: 54,
-      phone: 40,
+      tablet: 56,
+      phone: 42,
     },
   },
   '6xl': {
@@ -191,8 +203,8 @@ const textVariants = {
       phone: 48,
     },
     lineHeight: {
-      tablet: 66,
-      phone: 54,
+      tablet: 68,
+      phone: 56,
     },
   },
   '7xl': {
@@ -201,8 +213,8 @@ const textVariants = {
       phone: 56,
     },
     lineHeight: {
-      tablet: 80,
-      phone: 60,
+      tablet: 88,
+      phone: 64,
     },
   },
   '8xl': {
@@ -222,8 +234,8 @@ const textVariants = {
       phone: 72,
     },
     lineHeight: {
-      tablet: 142,
-      phone: 80,
+      tablet: 144,
+      phone: 88,
     },
   },
 };

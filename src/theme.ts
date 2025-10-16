@@ -22,7 +22,7 @@ const spacing = {
   '10xl': 80,
 };
 
-const rounding = {
+const borderRadii = {
   '2xs': 2,
   xs: 4,
   sm: 6,
@@ -219,6 +219,7 @@ const baseTheme = createTheme({
     desktop: 1080,
   },
   spacing,
+  borderRadii,
   stroke,
   textVariants,
   colors: {

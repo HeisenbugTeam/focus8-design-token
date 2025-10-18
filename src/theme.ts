@@ -25,9 +25,9 @@ const spacing = {
 const borderRadii = {
   '2xs': 2,
   xs: 4,
-  sm: 6,
-  md: 8,
-  lg: 10,
+  s: 6,
+  m: 8,
+  l: 10,
   xl: 12,
   '2xl': 16,
   '3xl': 24,

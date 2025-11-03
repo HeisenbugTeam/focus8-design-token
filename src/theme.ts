@@ -200,7 +200,7 @@ const textVariants = {
   '6xl': {
     fontSize: {
       tablet: 60,
-      phone: 48,
+      phone: 40,
     },
     lineHeight: {
       tablet: 68,
@@ -210,7 +210,7 @@ const textVariants = {
   '7xl': {
     fontSize: {
       tablet: 72,
-      phone: 56,
+      phone: 48,
     },
     lineHeight: {
       tablet: 88,
@@ -220,7 +220,7 @@ const textVariants = {
   '8xl': {
     fontSize: {
       tablet: 96,
-      phone: 64,
+      phone: 56,
     },
     lineHeight: {
       tablet: 108,
@@ -231,7 +231,7 @@ const textVariants = {
     fontFamily: 'RobotoFlex_500Wide',
     fontSize: {
       tablet: 128,
-      phone: 72,
+      phone: 64,
     },
     lineHeight: {
       tablet: 144,

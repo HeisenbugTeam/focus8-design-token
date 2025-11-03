@@ -1,6 +1,6 @@
 {
   "name": "@focus8/design-token",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "Package for design-tokens for Focus8, made to be used in conjunction with restyle.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

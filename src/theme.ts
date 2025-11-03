@@ -22,17 +22,17 @@ const spacing = {
   '10xl': 80,
 };
 
-const rounding = {
+const borderRadii = {
   '2xs': 2,
   xs: 4,
-  sm: 6,
-  md: 8,
-  lg: 10,
+  s: 6,
+  m: 8,
+  l: 10,
   xl: 12,
   '2xl': 16,
   '3xl': 24,
-  'pill': 999,
-}
+  pill: 999,
+};
 
 const stroke = {
   xs: 1,
@@ -41,18 +41,40 @@ const stroke = {
   l: 2.5,
 };
 
-const textVariants = {
+const LINE_HEIGHT_FACTOR = 1.35;
+
+function calcLineHeigthFromFontSize(fontSize: {
+  tablet: number;
+  phone: number;
+}): { tablet: number; phone: number } {
+  return {
+    tablet: Math.ceil(fontSize.tablet * LINE_HEIGHT_FACTOR),
+    phone: Math.ceil(fontSize.phone * LINE_HEIGHT_FACTOR),
+  };
+}
+
+type TextVariant = {
+  fontFamily?: string;
+  fontWeight?: number;
+  color?: string;
+  fontSize: {
+    tablet: number;
+    phone: number;
+  };
+  lineHeight: {
+    tablet: number;
+    phone: number;
+  };
+};
+
+const baseTextVariants = {
   defaults: {
     fontFamily: 'RobotoFlex_400Regular',
-    color: 'plannerForeground',
     fontWeight: 400,
+    color: 'plannerForeground',
     fontSize: {
       tablet: 16,
       phone: 14,
-    },
-    lineHeight: {
-      tablet: 24,
-      phone: 16,
     },
   },
   xs: {
@@ -62,29 +84,17 @@ const textVariants = {
       tablet: 12,
       phone: 10,
     },
-    lineHeight: {
-      tablet: 16,
-      phone: 12,
-    },
   },
   s: {
     fontSize: {
       tablet: 14,
       phone: 12,
     },
-    lineHeight: {
-      tablet: 20,
-      phone: 14,
-    },
   },
   m: {
     fontSize: {
       tablet: 16,
       phone: 14,
-    },
-    lineHeight: {
-      tablet: 24,
-      phone: 16,
     },
   },
   mBold: {
@@ -94,19 +104,11 @@ const textVariants = {
       tablet: 16,
       phone: 14,
     },
-    lineHeight: {
-      tablet: 24,
-      phone: 16,
-    },
   },
   l: {
     fontSize: {
       tablet: 18,
       phone: 16,
-    },
-    lineHeight: {
-      tablet: 28,
-      phone: 18,
     },
   },
   lNarrow: {
@@ -114,10 +116,6 @@ const textVariants = {
     fontSize: {
       tablet: 18,
       phone: 16,
-    },
-    lineHeight: {
-      tablet: 28,
-      phone: 18,
     },
   },
   lBold: {
@@ -127,19 +125,11 @@ const textVariants = {
       tablet: 18,
       phone: 16,
     },
-    lineHeight: {
-      tablet: 28,
-      phone: 18,
-    },
   },
   xl: {
     fontSize: {
       tablet: 20,
       phone: 18,
-    },
-    lineHeight: {
-      tablet: 28,
-      phone: 20,
     },
   },
   '2xl': {
@@ -147,10 +137,6 @@ const textVariants = {
     fontSize: {
       tablet: 24,
       phone: 20,
-    },
-    lineHeight: {
-      tablet: 32,
-      phone: 24,
     },
   },
   '2xlBold': {
@@ -160,10 +146,6 @@ const textVariants = {
       tablet: 24,
       phone: 20,
     },
-    lineHeight: {
-      tablet: 32,
-      phone: 24,
-    },
   },
   '3xl': {
     fontFamily: 'RobotoFlex_500Wide',
@@ -172,19 +154,11 @@ const textVariants = {
       tablet: 30,
       phone: 24,
     },
-    lineHeight: {
-      tablet: 36,
-      phone: 30,
-    },
   },
   '4xl': {
     fontSize: {
       tablet: 36,
       phone: 30,
-    },
-    lineHeight: {
-      tablet: 42,
-      phone: 36,
     },
   },
   '5xl': {
@@ -192,19 +166,11 @@ const textVariants = {
       tablet: 48,
       phone: 36,
     },
-    lineHeight: {
-      tablet: 56,
-      phone: 42,
-    },
   },
   '6xl': {
     fontSize: {
       tablet: 60,
       phone: 40,
-    },
-    lineHeight: {
-      tablet: 68,
-      phone: 56,
     },
   },
   '7xl': {
@@ -212,19 +178,11 @@ const textVariants = {
       tablet: 72,
       phone: 48,
     },
-    lineHeight: {
-      tablet: 88,
-      phone: 64,
-    },
   },
   '8xl': {
     fontSize: {
       tablet: 96,
       phone: 56,
-    },
-    lineHeight: {
-      tablet: 108,
-      phone: 72,
     },
   },
   '9xl': {
@@ -233,20 +191,35 @@ const textVariants = {
       tablet: 128,
       phone: 64,
     },
-    lineHeight: {
-      tablet: 144,
-      phone: 88,
-    },
   },
-};
+} as const;
+
+type TextVariantName = keyof typeof baseTextVariants;
+
+const textVariants = Object.fromEntries(
+  Object.entries(baseTextVariants).map(([key, variant]) => {
+    if (variant.fontSize) {
+      return [
+        key,
+        {
+          ...variant,
+          lineHeight: calcLineHeigthFromFontSize(variant.fontSize),
+        },
+      ];
+    }
+    return [key, variant];
+  })
+) as Record<TextVariantName, TextVariant>;
 
 // Create the base theme using createTheme to get type validation
 const baseTheme = createTheme({
   breakpoints: {
     phone: 0,
     tablet: 768,
+    desktop: 1080,
   },
   spacing,
+  borderRadii,
   stroke,
   textVariants,
   colors: {

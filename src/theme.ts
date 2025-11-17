@@ -439,7 +439,7 @@ const darkTheme: Theme = {
     calendarBackground: palette.neutral[950],
     calendarForeground: palette.white,
     calendarMutedBackground: '#17171780',
-    calendarMutedForeground: palette.neutral[400],
+    calendarMutedForeground: palette.neutral[300],
     calendarCellBorder: palette.neutral[700],
     calendarTodayBackground: palette.rose[600],
     calendarTodayForeground: palette.white,

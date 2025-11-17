@@ -73,123 +73,123 @@ const baseTextVariants = {
     fontWeight: 400,
     color: 'plannerForeground',
     fontSize: {
-      tablet: 16,
-      phone: 14,
+      tablet: 20,
+      phone: 16,
     },
   },
   xs: {
     fontFamily: 'RobotoFlex_500Regular',
     fontWeight: 500,
     fontSize: {
-      tablet: 12,
-      phone: 10,
-    },
-  },
-  s: {
-    fontSize: {
       tablet: 14,
       phone: 12,
     },
   },
+  s: {
+    fontSize: {
+      tablet: 18,
+      phone: 14,
+    },
+  },
   m: {
     fontSize: {
-      tablet: 16,
-      phone: 14,
+      tablet: 20,
+      phone: 16,
     },
   },
   mBold: {
     fontFamily: 'RobotoFlex_500Regular',
     fontWeight: 500,
     fontSize: {
-      tablet: 16,
-      phone: 14,
+      tablet: 20,
+      phone: 16,
     },
   },
   l: {
     fontSize: {
-      tablet: 18,
-      phone: 16,
+      tablet: 22,
+      phone: 18,
     },
   },
   lNarrow: {
     fontFamily: 'RobotoFlex_400Narrow',
     fontSize: {
-      tablet: 18,
-      phone: 16,
+      tablet: 22,
+      phone: 18,
     },
   },
   lBold: {
     fontFamily: 'RobotoFlex_500Regular',
     fontWeight: 500,
     fontSize: {
-      tablet: 18,
-      phone: 16,
+      tablet: 22,
+      phone: 18,
     },
   },
   xl: {
     fontSize: {
-      tablet: 20,
-      phone: 18,
+      tablet: 24,
+      phone: 20,
     },
   },
   '2xl': {
     fontFamily: 'RobotoFlex_400Regular',
     fontSize: {
-      tablet: 24,
-      phone: 20,
+      tablet: 28,
+      phone: 22,
     },
   },
   '2xlBold': {
     fontFamily: 'RobotoFlex_500Regular',
     fontWeight: 500,
     fontSize: {
-      tablet: 24,
-      phone: 20,
+      tablet: 28,
+      phone: 22,
     },
   },
   '3xl': {
     fontFamily: 'RobotoFlex_500Wide',
     fontWeight: 500,
     fontSize: {
-      tablet: 30,
+      tablet: 32,
       phone: 24,
     },
   },
   '4xl': {
     fontSize: {
       tablet: 36,
-      phone: 30,
+      phone: 28,
     },
   },
   '5xl': {
     fontSize: {
       tablet: 48,
-      phone: 36,
+      phone: 32,
     },
   },
   '6xl': {
     fontSize: {
-      tablet: 60,
-      phone: 40,
+      tablet: 64,
+      phone: 36,
     },
   },
   '7xl': {
     fontSize: {
       tablet: 72,
-      phone: 48,
+      phone: 40,
     },
   },
   '8xl': {
     fontSize: {
       tablet: 96,
-      phone: 56,
+      phone: 48,
     },
   },
   '9xl': {
     fontFamily: 'RobotoFlex_500Wide',
     fontSize: {
       tablet: 128,
-      phone: 64,
+      phone: 56,
     },
   },
 } as const;

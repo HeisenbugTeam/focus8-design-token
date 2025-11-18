@@ -3,6 +3,7 @@ import palette from './palette';
 
 const spacing = {
   0: 0,
+  1: 1,
   '3xs': 2,
   '2xs': 4,
   xs: 6,
@@ -85,13 +86,34 @@ const baseTextVariants = {
       phone: 12,
     },
   },
+  xsNarrow: {
+    fontFamily: 'RobotoFlex_400Narrow',
+    fontSize: {
+      tablet: 14,
+      phone: 12,
+    },
+  },
   s: {
     fontSize: {
       tablet: 18,
       phone: 14,
     },
   },
+  sNarrow: {
+    fontFamily: 'RobotoFlex_400Narrow',
+    fontSize: {
+      tablet: 18,
+      phone: 14,
+    },
+  },
   m: {
+    fontSize: {
+      tablet: 20,
+      phone: 16,
+    },
+  },
+  mNarrow: {
+    fontFamily: 'RobotoFlex_400Narrow',
     fontSize: {
       tablet: 20,
       phone: 16,
@@ -133,7 +155,6 @@ const baseTextVariants = {
     },
   },
   '2xl': {
-    fontFamily: 'RobotoFlex_400Regular',
     fontSize: {
       tablet: 28,
       phone: 22,

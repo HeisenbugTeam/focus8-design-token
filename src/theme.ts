@@ -160,6 +160,14 @@ const baseTextVariants = {
       phone: 22,
     },
   },
+  '2xlWide': {
+    fontFamily: 'RobotoFlex_500Wide',
+    fontWeight: 500,
+    fontSize: {
+      tablet: 28,
+      phone: 22,
+    },
+  },
   '2xlBold': {
     fontFamily: 'RobotoFlex_500Regular',
     fontWeight: 500,
@@ -177,6 +185,14 @@ const baseTextVariants = {
     },
   },
   '4xl': {
+    fontSize: {
+      tablet: 36,
+      phone: 28,
+    },
+  },
+  '4xlWide': {
+    fontFamily: 'RobotoFlex_500Wide',
+    fontWeight: 500,
     fontSize: {
       tablet: 36,
       phone: 28,

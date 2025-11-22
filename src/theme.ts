@@ -177,6 +177,12 @@ const baseTextVariants = {
     },
   },
   '3xl': {
+    fontSize: {
+      tablet: 32,
+      phone: 24,
+    },
+  },
+  '3xlWide': {
     fontFamily: 'RobotoFlex_500Wide',
     fontWeight: 500,
     fontSize: {

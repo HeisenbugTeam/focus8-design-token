@@ -160,6 +160,13 @@ const baseTextVariants = {
       phone: 22,
     },
   },
+  '2xlNarrow': {
+    fontFamily: 'RobotoFlex_400Narrow',
+    fontSize: {
+      tablet: 28,
+      phone: 22,
+    },
+  },
   '2xlWide': {
     fontFamily: 'RobotoFlex_500Wide',
     fontWeight: 500,

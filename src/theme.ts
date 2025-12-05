@@ -502,12 +502,12 @@ const darkTheme: Theme = {
     timerBorder: palette.neutral[700],
     timerTintedBackground: '#26262680',
 
-    eventNeutralBackground: palette.neutral[100],
-    eventNeutralForeground: palette.neutral[950],
-    eventNeutralDetails: palette.neutral[700],
+    eventNeutralBackground: palette.neutral[800],
+    eventNeutralForeground: palette.neutral[50],
+    eventNeutralDetails: palette.neutral[300],
     eventNeutralPrimary: palette.neutral[500],
-    eventNeutralButtonBackground: palette.neutral[200],
-    eventNeutralButtonForeground: palette.neutral[950],
+    eventNeutralButtonBackground: palette.neutral[700],
+    eventNeutralButtonForeground: palette.neutral[50],
 
     eventRoseBackground: palette.rose[950],
     eventRoseForeground: palette.rose[50],
